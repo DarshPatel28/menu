@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indian Restaurant</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	/* background-color: #F8C471; */
+    background-image: url("https://i.ibb.co/XjSBZgn/desktop-wallpaper-indian-restaurant-background-2-background-check-all-indian-style.jpg");
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h2, h3 {
+	color: #f89900;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	nav li {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+  background-image:  url("https://i.ibb.co/XjSBZgn/desktop-wallpaper-indian-restaurant-background-2-background-check-all-indian-style.jpg");
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        // Add smooth scrolling to all links
+$('a').on('click', function(event) {
+	if (this.hash !== '') {
+		event.preventDefault();
+
+		var hash = this.hash;
+
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		}, 800, function(){
+			window.location.hash = hash;
+		});
+	}
+});
+    </script>
+  <center>  
+	<header>
+		<h1>P&P Restaurant</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="state1.html">Gujarati Thali</a></li>
+				<li><a href="state2.html">Punjabi Thali</a></li>
+				<li><a href="state3.html">Rajasthani Thali</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Welcome to Indian Restaurant</h2>
+		<p>Explore the diverse and delicious cuisine of India, categorized by state.</p>
+		<section>
+			<h3>Gujarati Thali</h3>
+			<p>Discover the unique flavors of Gujarati Thali.</p>
+			<a href="state1.html"><img src="https://imgs.search.brave.com/z8JzBzqcMGvpQ6qbzx0zOW1q-pI1Rx6kc5ZQuJt4GeI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3VsdHVyYWxpbmRp/YS5uZXQvaWxpaW1h/Z2VzL0d1amFyYXRp/LUZvb2QtMS5qcGc" height="100px" width="250px" alt="Gujarati Thali"></a>
+		</section>
+		<section>
+			<h3>Punjabi Thali</h3>
+			<p>Taste the traditional dishes of Punjabi Thali.</p>
+			<a href="state2.html"><img src="https://imgs.search.brave.com/3f6ch2uEqFbAth9GvQzJx5DLHlzRVt7doVQ2TZUSe9g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjU1NTc2MjMyNjIt/YjUxYzI1MTNhNjQx/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRK/OGZHbHVaR2xoYmlV/eU1HWnZiMlI4Wlc1/OE1IeDhNSHg4ZkRB/PSZ3PTEwMDAmcT04/MA" height="100px" width="250px" alt="State 2"></a>
+		</section>
+		<section>
+			<h3>Rajasthani Thali</h3>
+			<p>Indulge in the spicy cuisine of Rajasthani Thali.</p>
+			<a href="state3.html"><img src="https://imgs.search.brave.com/zgS-lGToAU1Alq4W3k1by3Hs4nVhiXH-iaddF2SMsvk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbmRp/YW4tdGhhbGktcmFq/YXN0aGFuaS1mb29k/LWNvbnNpc3Rpbmct/ZGFhbC1iYWF0aS1j/aHVybWEtZ2F0dGUt/a2ktc2FiamktNzkx/OTYyMzUuanBn" height="100px" width="250px" alt="State 3"></a>
+		</section>
+	</main>
+</center>  
+	<footer id="footer">
+        <h2>P&P Restraunt &copy; all rights reserved</h2>
+      </footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
