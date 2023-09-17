@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>P&P Restaurant</title>
+	<title>Indian Restaurant</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        body {
-	font-family: Arial, sans-serif;
+       * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	font-family: Arial, sans-serif;
+}
+
 header {
-	/* background-color: #F8C471; */
-    background-image: url("https://i.ibb.co/XjSBZgn/desktop-wallpaper-indian-restaurant-background-2-background-check-all-indian-style.jpg");
-	color: #fff;
+	background-image: url('https://i.ibb.co/XjSBZgn/desktop-wallpaper-indian-restaurant-background-2-background-check-all-indian-style.jpg');
 	padding: 20px;
 }
 
 nav ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav li {
-	display: inline-block;
-	margin-right: 20px;
+	margin: 0 10px;
 }
 
 nav a {
-	color: #fff;
+	color:#fff;
 	text-decoration: none;
 }
 
@@ -38,92 +39,101 @@ main {
 	padding: 20px;
 }
 
-section {
+#banner {
+	background-image: url('https://cdn.pixabay.com/photo/2018/03/18/12/04/saffron-3236571_1280.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+
+#categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.category {
+	flex-basis: calc(50% - 20px);
 	margin-bottom: 20px;
 }
 
-h2, h3 {
-	color: #f89900;
+.category img {
+	width: 100%;
+	height: 190px;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+.category h3 {
+	margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-	nav li {
-		display: block;
-		margin: 10px 0;
+.category p {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #666;
+}
+
+footer {
+	background-image: url('https://i.ibb.co/XjSBZgn/desktop-wallpaper-indian-restaurant-background-2-background-check-all-indian-style.jpg');
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.category {
+		flex-basis: calc(25% - 20px);
 	}
 }
-
-#footer h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 2.6rem;
-  font-weight: 500;
-  color: #fff;
-  background: rgb(65, 65, 65);
-  background-image:  url("https://i.ibb.co/XjSBZgn/desktop-wallpaper-indian-restaurant-background-2-background-check-all-indian-style.jpg");
-}
-
     </style>
 </head>
 <body>
-    <script>
-        // Add smooth scrolling to all links
-$('a').on('click', function(event) {
-	if (this.hash !== '') {
-		event.preventDefault();
-
-		var hash = this.hash;
-
-		$('html, body').animate({
-			scrollTop: $(hash).offset().top
-		}, 800, function(){
-			window.location.hash = hash;
-		});
-	}
-});
-    </script>
-  <center>  
 	<header>
-		<h1>P&P Restaurant</h1>
 		<nav>
 			<ul>
-				<li><a href="https://darshpatel28.github.io/project/">Home</a></li>
-				<li><a href="https://darshpatel28.github.io/gujthali/">Gujarati Thali</a></li>
-				<li><a href="state2.html">Punjabi Thali</a></li>
-				<li><a href="state3.html">Rajasthani Thali</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="https://darshpatel28.github.io/project">Home</a></li>
+				
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<h2>Welcome to Indian Restaurant</h2>
-		<p>Explore the diverse and delicious cuisine of India, categorized by state.</p>
-		<section>
-			<h3>Gujarati Thali</h3>
-			<p>Discover the unique flavors of Gujarati Thali.</p>
-			<a href="https://darshpatel28.github.io/gujthali/"><img src="https://imgs.search.brave.com/z8JzBzqcMGvpQ6qbzx0zOW1q-pI1Rx6kc5ZQuJt4GeI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3VsdHVyYWxpbmRp/YS5uZXQvaWxpaW1h/Z2VzL0d1amFyYXRp/LUZvb2QtMS5qcGc" height="100px" width="250px" alt="Gujarati Thali"></a>
+		<section id="banner">
+			<h1>Welcome to P&P Restaurant</h1>
+			<p>Discover the authentic taste of India</p>
 		</section>
-		<section>
-			<h3>Punjabi Thali</h3>
-			<p>Taste the traditional dishes of Punjabi Thali.</p>
-			<a href="state2.html"><img src="https://imgs.search.brave.com/3f6ch2uEqFbAth9GvQzJx5DLHlzRVt7doVQ2TZUSe9g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjU1NTc2MjMyNjIt/YjUxYzI1MTNhNjQx/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRK/OGZHbHVaR2xoYmlV/eU1HWnZiMlI4Wlc1/OE1IeDhNSHg4ZkRB/PSZ3PTEwMDAmcT04/MA" height="100px" width="250px" alt="State 2"></a>
-		</section>
-		<section>
-			<h3>Rajasthani Thali</h3>
-			<p>Indulge in the spicy cuisine of Rajasthani Thali.</p>
-			<a href="state3.html"><img src="https://imgs.search.brave.com/zgS-lGToAU1Alq4W3k1by3Hs4nVhiXH-iaddF2SMsvk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbmRp/YW4tdGhhbGktcmFq/YXN0aGFuaS1mb29k/LWNvbnNpc3Rpbmct/ZGFhbC1iYWF0aS1j/aHVybWEtZ2F0dGUt/a2ktc2FiamktNzkx/OTYyMzUuanBn" height="100px" width="250px" alt="State 3"></a>
+        <center><h2>Our Specialties</h2></center>
+		<section id="categories">
+			<div class="category">
+                <a href="https://darshpatel28.github.io/gujthali"><img src="https://imgs.search.brave.com/z8JzBzqcMGvpQ6qbzx0zOW1q-pI1Rx6kc5ZQuJt4GeI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3VsdHVyYWxpbmRp/YS5uZXQvaWxpaW1h/Z2VzL0d1amFyYXRp/LUZvb2QtMS5qcGc" alt="Gujarati Thali"></a>
+				<h3>Gujarati Thali</h3>
+				<p>Discover the unique flavors of Gujarati Thali.</p>
+			</div>
+			<div class="category">
+                <a href="state2.html"><img src="https://imgs.search.brave.com/3f6ch2uEqFbAth9GvQzJx5DLHlzRVt7doVQ2TZUSe9g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjU1NTc2MjMyNjIt/YjUxYzI1MTNhNjQx/P2l4bGliPXJiLTQu/MC4zJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRK/OGZHbHVaR2xoYmlV/eU1HWnZiMlI4Wlc1/OE1IeDhNSHg4ZkRB/PSZ3PTEwMDAmcT04/MA"  alt="State 2"></a>
+				<h3>Punjabi Thali</h3>
+				<p>Taste the traditional dishes of Punjabi Thali.</p>
+			</div>
+			<div class="category">
+                <a href="state3.html"><img src="https://imgs.search.brave.com/zgS-lGToAU1Alq4W3k1by3Hs4nVhiXH-iaddF2SMsvk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9pbmRp/YW4tdGhhbGktcmFq/YXN0aGFuaS1mb29k/LWNvbnNpc3Rpbmct/ZGFhbC1iYWF0aS1j/aHVybWEtZ2F0dGUt/a2ktc2FiamktNzkx/OTYyMzUuanBn" alt="State 3"></a>
+				<h3>Rajasthani Thali</h3>
+				<p>Indulge in the spicy cuisine of Rajasthani Thali.</p>
+			</div>
+            <div class="category">
+                <a href="state3.html"><img src="https://imgs.search.brave.com/PwJD7wGNFw7z81w7IOqHE2vWnDX7PAq-9DM9UAA1wzM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vNTY1MzYz/OC8xMTQzMy9pLzYw/MC9kZXBvc2l0cGhv/dG9zXzExNDMzMjgy/MC1zdG9jay1waG90/by1mb29kLXNvdXRo/LWluZGlhbi1mb29k/LWlkbGkuanBn"></a>
+                <h3>SouthIndian Thali</h3>
+                <p>Taste the traditional cury of SouthIndian Thali.</p>
+            </div>
 		</section>
 	</main>
-</center>  
-	<footer id="footer">
-        <h2>P&P Restraunt &copy; all rights reserved</h2>
-      </footer>
-
+	<footer>
+		<p>&copy; 2023 P&P Restaurant</p>
+	</footer>
 	<script src="script.js"></script>
 </body>
 </html>
